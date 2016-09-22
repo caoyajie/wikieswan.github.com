@@ -3,45 +3,76 @@
 	<div class="row margin-v-10">
 		<div class="col">
 			<div class="input-wrap">
-				<div class="input-label">输入标题</div>
+				<div class="input-label">文本表单</div>
 				<div class="input-holder">
-					<input type="text" placeholder="输入银行卡号" />
+					<input type="text" value="Sample Text" />
 				</div>
-				<div class="input-del">
-					<i class="icon-delet"></i>
+				<div class="input-del" >
+					<i class="icon-delet" role="button"></i>
 				</div>
 			</div>
 		</div>
 	</div>
-	<p class="demo-p">2 ICON </p>
+		
+
 	<div class="row margin-v-10">
 		<div class="col">
 			<div class="input-wrap">
-				<div class="input-label">输入标题</div>
+				<div class="input-label">手机号</div>
 				<div class="input-holder">
-					<input type="text" placeholder="输入银行卡号" />
+					<input type="tel" formatType="mobile" placeholder="请输入手机号">
 				</div>
 				<div class="input-del">
-					<i class="icon-delet"></i>
-				</div>
-				<div class="input-icon">
-					<i class="icon-card"></i>
+					<i class="icon-delet" role="button"></i>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<div class="row margin-v-10">
+		<div class="col">
+			<div class="input-wrap">
+				<div class="input-label">银行卡号</div>
+				<div class="input-holder">
+					<input type="tel" formatType="bankCard" placeholder="请输入银行卡号">
+				</div>
+				<div class="input-del">
+					<i class="icon-delet" role="button"></i>
+				</div>
+				<div class="input-icon">
+					<i class="icon-card" role="button"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row margin-v-10">
+		<div class="col">
+			<div class="input-wrap">
+				<div class="input-label">身份证号</div>
+				<div class="input-holder">
+					<input type="tel" formatType="idCard" placeholder="请输入身份证">
+				</div>
+				<div class="input-del">
+					<i class="icon-delet" role="button"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
 	<p class="demo-p">3 没有标题 </p>
 	<div class="row margin-v-10">
 		<div class="col">
 			<div class="input-wrap">
 				<div class="input-holder">
-					<input type="text" placeholder="输入银行卡号" />
+					<input type="text" placeholder="输入姓名" />
 				</div>
 				<div class="input-del">
-					<i class="icon-delet"></i>
+					<i class="icon-delet" role="button"></i>
 				</div>
 				<div class="input-icon">
-					<i class="icon-card"></i>
+					<i class="icon-card" role="button"></i>
 				</div>
 			</div>
 		</div>
@@ -50,12 +81,12 @@
 	<div class="row margin-v-10">
 		<div class="col">
 			<div class="input-wrap">
-				<div class="input-label">输入标题</div>
+				<div class="input-label">标题</div>
 				<div class="input-holder">
-					<input type="text" placeholder="输入银行卡号" />
+					<input type="text" placeholder="输入姓名" />
 				</div>
 				<div class="input-del">
-					<i class="icon-delet"></i>
+					<i class="icon-delet" role="button"></i>
 				</div>
 			</div>
 		</div>
@@ -65,13 +96,109 @@
 		<div class="col">
 			<div class="input-wrap">
 				<div class="input-holder">
-					<input type="text" placeholder="输入银行卡号" />
+					<input type="text" placeholder="输入姓名" />
 				</div>
 				<div class="input-del">
-					<i class="icon-delet"></i>
+					<i class="icon-delet" role="button"></i>
 				</div>
 			</div>
 		</div>
 	</div>
 
+	<p class="demo-p">6 验证码  </p>
+	<div class="row margin-v-10">
+		<div class="col">
+			<div class="input-wrap">
+				<div class="input-holder">
+					<input type="tel" placeholder="6位数字验证码" />
+				</div>
+				<div class="input-del">
+					<i class="icon-delet" role="button"></i>
+				</div>
+				<div class="input-auth-code" role="button">
+					发送验证码
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<p class="demo-p">6 验证码  </p>
+	<div class="row margin-v-10">
+		<div class="col">
+			<div class="input-wrap">
+				<div class="input-holder">
+					<input type="tel" placeholder="6位数字验证码" />
+				</div>
+				<div class="input-del">
+					<i class="icon-delet" role="button"></i>
+				</div>
+				<div class="input-auth-code input-auth-code-disabled" role="button">
+					59秒后重发
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<p class="demo-p">6 验证码  </p>
+	<div class="row margin-v-10">
+		<div class="col">
+			<div class="input-wrap">
+				<div class="input-holder">
+					<input type="tel" placeholder="6位数字验证码" />
+				</div>
+				<div class="input-del">
+					<i class="icon-delet" role="button"></i>
+				</div>
+				<div class="input-auth-code" role="button">
+					重发验证码
+				</div>
+			</div>
+		</div>
+	</div>
+	<p class="demo-p">7 密码-- 查看密文 </p>
+	<div class="row margin-v-10">
+		<div class="col">
+			<div class="input-wrap">
+				<div class="input-label">密码</div>
+				<div class="input-holder">
+					<input type="password" placeholder="请输入密码" />
+				</div>
+				<div class="input-del">
+					<i class="icon-delet" role="button"></i>
+				</div>
+				<div class="input-icon input-view-close">
+					<i class="icon-view"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+	<p class="demo-p">7 密码 </p>
+	<div class="row margin-v-10">
+		<div class="col">
+			<div class="input-wrap">
+				<div class="input-label">密码</div>
+				<div class="input-holder">
+					<input type="password" placeholder="请输入密码" />
+				</div>
+				<div class="input-del">
+					<i class="icon-delet" role="button"></i>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

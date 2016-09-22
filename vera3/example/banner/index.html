@@ -1,0 +1,42 @@
+<div class="container">
+	<p class="demo-p">banner提示</p>
+	<div class="banner banner-info">
+		<span>不带icon的提示信息</span>
+	</div>
+	<div class="banner banner-info">
+		<i class="icon-warn"></i>
+		<span>带icon的提示信息</span>
+	</div>
+	<div class="banner banner-warn">
+		<i class="icon-delet"></i>
+		<span>错误信息</span>
+	</div>
+	<div class="banner banner-warn" id="J_banner_tobeHidden">
+		<i class="icon-delet"></i>
+		<span>调用接口‘hideBanner’隐藏banner</span>
+	</div>
+	<div class="banner banner-warn banner-hide">
+		<i class="icon-delet"></i>
+		调用接口‘showBanner’显示出banner
+	</div>
+	<div id="J_banner_wrapper">
+	</div>
+</div>
+<script type="text/javascript">
+	$(function(){
+		vera.showBanner('.banner-hide');
+		vera.hideBanner('#J_banner_tobeHidden');
+		
+		vera.banner({
+			target: '#J_banner_wrapper',
+			text: '<i class="icon-delet"></i><span>不设置autoHide不消失</span>'
+		});
+		vera.banner({
+			target: '#J_banner_wrapper',
+			grade: 'warn',//只有warn 和 info两种
+			text: '2秒后自动消失',
+			html: '<i class="icon-delet"></i><span>10秒后自动消失</span>',
+			autoHide: 2
+		});
+	})
+</script>
